@@ -12,7 +12,7 @@ export default {
   async fetch(request, env, ctx) {
     // You can view your logs in the Observability dashboard
      const url = new URL(request.url);
-
+    console.log(123)
     const backend =
       `https://nas.chenwk.cn:5056${url.pathname}${url.search}`;
 
